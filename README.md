@@ -1,4 +1,4 @@
-# test
+# Next Generation
 
 A Node.js app using [Express 4](http://expressjs.com/) that provides an API that will return the next generation of grid cells for a game described below.
 
