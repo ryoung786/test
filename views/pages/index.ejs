@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>      
+      <script type="text/javascript">
+      function getNextGeneration() {
+        var liveCells = [[0,0],[0,1],[1,0],[1,1],[2,2],[2,1],[1,2],[0,2],[2,0]];
+        var data = {
+          'M': 2,
+          'N': 2, 
+          'liveCells' : liveCells
+        };
+        $.ajax({
+          url: 'http://localhost:5000/nextgen',
+          jsonp: 'callback',
+          dataType: 'jsonp',
+          data: data,
+          success: function(response) {
+            console.log(JSON.stringify(response));
+            alert(JSON.stringify(response));
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="getNextGeneration()">Get Next Generation!</button>
+  </body>
+</html> 

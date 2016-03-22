@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "0.1.5",
+  "description": "A Node.js app using Express 4 that generates a multidimensional array of grid cells in a game.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.3.3",
+    "express": "4.13.3"
+  },
+  "engines": {
+    "node": "5.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/creviera/test"
+  }
+}
