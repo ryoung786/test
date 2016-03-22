@@ -1,5 +1,5 @@
 {
   "name": "Next Generation",
   "description": "A Node.js app using Express 4 that generates a multidimensional array of grid cells in a game.",
-  "repository": "https://git.heroku.com/creviera"
+  "repository": "https://github.com/creviera/test"
 }
