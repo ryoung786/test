@@ -15,6 +15,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.heroku.com/creviera"
+    "url": "git@github.com:creviera/test.git"
   }
 }
