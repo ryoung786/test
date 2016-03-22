@@ -17,7 +17,9 @@ $ npm install
 $ npm start
 ```
 
-The app should now be running on [localhost:5000](http://localhost:5000/).
+The app should now be running on [localhost:5000](http://localhost:5000/). Click the button to get the next cell generation for the input: [[2,1],[2,2],[2,3]]
+
+API URL: http://localhost:5000/nextgen
 
 ## Documentation used when working on this project
 
