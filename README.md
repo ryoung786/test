@@ -1,4 +1,4 @@
-# node-js-getting-started
+# Next Generation
 
 A Node.js app using [Express 4](http://expressjs.com/) that provides an API that will return the next generation of grid cells for a game described below.
 
@@ -10,8 +10,6 @@ Count the number of 'on' cells surrounding each cell on the board. If the number
 
 ## Running Locally
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
 ```sh
 $ git clone git@github.com:creviera/test.git # or clone your own fork
 $ cd test
@@ -19,20 +17,12 @@ $ npm install
 $ npm start
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+The app should now be running on [localhost:5000](http://localhost:5000/). Click the button to get the next cell generation for the input: [[2,1],[2,2],[2,3]]
 
-## Deploying to Heroku
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+API URL: http://localhost:5000/nextgen
 
 ## Documentation used when working on this project
 
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
 - [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
 - [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
 - [JQuery - asynchronous HTTP (Ajax) request](http://api.jquery.com/jquery.ajax/)
