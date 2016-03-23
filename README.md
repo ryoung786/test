@@ -25,7 +25,6 @@ https://creviera.herokuapp.com/
 
 ## API
 
-nextgen
 URL: http://<hostname>/nextgen
 
 e.g.
@@ -42,7 +41,7 @@ var data = {
     dataType: 'jsonp',
     data: data,
     success: function(response) {
-      console.log(JSON.stringify(response));
+      drawGeneration(response);
     }
   });
 
