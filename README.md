@@ -19,7 +19,34 @@ $ npm start
 
 The app should now be running on [localhost:5000](http://localhost:5000/). Click the button to get the next cell generation for the input: [[2,1],[2,2],[2,3]]
 
-API URL: http://localhost:5000/nextgen
+## Demo hosted in Heroku
+
+https://creviera.herokuapp.com/
+
+## API
+
+nextgen
+URL: http://<hostname>/nextgen
+
+e.g.
+```
+var liveCells = [[2,1],[2,2],[2,3]];
+var data = {
+    'M': 3,
+    'N': 3, 
+    'liveCells' : liveCells
+  };
+  $.ajax({
+    url: 'nextgen',
+    jsonp: 'callback',
+    dataType: 'jsonp',
+    data: data,
+    success: function(response) {
+      console.log(JSON.stringify(response));
+    }
+  });
+
+```
 
 ## Documentation used when working on this project
 
