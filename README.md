@@ -17,7 +17,7 @@ $ npm install
 $ npm start
 ```
 
-The app should now be running on [localhost:5000](http://localhost:5000/). Click the button to get the next cell generation for the input: [[2,1],[2,2],[2,3]]
+The app should now be running on [localhost:5000](http://localhost:5000/). Click the button to get the next cell generation for the input: [[2,1],[2,2],[2,3]] on a 5x5 board or enter your own inputs to get the next generation for. An alert message will show the next generation, which will be the points (in unsorted order for performance reasons): [[1,2],[2,2],[3,2]].
 
 ## Demo hosted in Heroku
 
@@ -32,8 +32,8 @@ e.g.
 ```
 var liveCells = [[2,1],[2,2],[2,3]];
 var data = {
-    'M': 3,
-    'N': 3, 
+    'M': 5,
+    'N': 5, 
     'liveCells' : liveCells
 };
 $.ajax({
