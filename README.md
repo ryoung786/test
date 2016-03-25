@@ -28,11 +28,11 @@ The app should now be running on [localhost:5000](http://localhost:5000/). Click
 URL: 
 `http://<hostname>/nextgen`
 
-If running locally, use `https://localhost:5000/nextgen` or the relative path `nextgen` (if client is on the same host). Otherwise use `https://creviera.herokuapp.com/nexgen`.
+If running locally, use `https://localhost:5000/nextgen` or the relative path `nextgen` (if client is on the same host). Otherwise use `https://creviera.herokuapp.com/nextgen`.
 
 e.g. local client hitting the API:
 ```
-var liveCells = [[2,1],[2,2],[2,3]];`https://creviera.herokuapp.com/nexgen`.
+var liveCells = [[2,1],[2,2],[2,3]];`https://creviera.herokuapp.com/nextgen`.
 
 e.g. client hitting the API l
 var data = {
