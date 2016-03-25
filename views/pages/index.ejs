@@ -4,12 +4,12 @@
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script type="text/javascript">
       function getNextGeneration() {
-        //var liveCells = [[0,0],[2,0],[4,0],[1,1],[3,1],[0,2],[2,2],[4,2],[1,3],[3,3],[0,4],[2,4],[4,4]]
-        var liveCells = [[2,1],[2,2],[2,3]];
-        //var liveCells = [[0,0],[0,1],[0,2]];
+        var M = JSON.parse(document.getElementById('width').value);
+        var N = JSON.parse(document.getElementById('height').value);
+        var liveCells = JSON.parse(document.getElementById('liveCells').value);
         var data = {
-          'M': 5,
-          'N': 5, 
+          'M': M,
+          'N': N, 
           'liveCells' : liveCells
         };
         $.ajax({
@@ -26,6 +26,12 @@
     </script>
   </head>
   <body>
+    Width: <input type="text" name="width" id="width" value="5" size="4"></input>
+    <br />
+    Height: <input type="text" name="height" id="height" value="5" size="4"></input>
+    <br />
+    LiveCells: <input type="text" name="liveCells" id="liveCells" value="[[2,1],[2,2],[2,3]]"></input>
+    <br />
     <button onclick="getNextGeneration()">Get Next Generation!</button>
   </body>
 </html> 
