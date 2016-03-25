@@ -10,7 +10,7 @@ Count the number of 'on' cells surrounding each cell on the board. If the number
 
 ## Running Locally
 
-```sh
+```
 $ git clone git@github.com:creviera/test.git # or clone your own fork
 $ cd test
 $ npm install
@@ -19,7 +19,34 @@ $ npm start
 
 The app should now be running on [localhost:5000](http://localhost:5000/). Click the button to get the next cell generation for the input: [[2,1],[2,2],[2,3]]
 
-API URL: http://localhost:5000/nextgen
+## Demo hosted in Heroku
+
+`https://creviera.herokuapp.com/`
+
+## API
+
+URL: 
+`http://<hostname>/nextgen`
+
+e.g.
+```
+var liveCells = [[2,1],[2,2],[2,3]];
+var data = {
+    'M': 3,
+    'N': 3, 
+    'liveCells' : liveCells
+};
+$.ajax({
+    url: 'nextgen',
+    jsonp: 'callback',
+    dataType: 'jsonp',
+    data: data,
+    success: function(response) {
+      drawGeneration(response);
+    }
+});
+
+```
 
 ## Documentation used when working on this project
 
